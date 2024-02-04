@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlphaNews</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/466c49389d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav>
+    <div class="container main-nav flex">
+      <a href="" class="logo">
+        <img src="./1699861705549.png" alt="" onclick="homePage()">
+
+      </a>
+
+      <div class="nav-links">
+        <ul class="flex">
+          <li id="Sports" onclick="navigationPage('Sports')">Sports</li>
+          <li id="Politics" onclick="navigationPage('Politics')">Politics</li>
+          <li id="World" onclick="navigationPage('World')">World</li>
+          <li id="Finance" onclick="navigationPage('Finance')">Finance</li>
+          <li id="Entertainment" onclick="navigationPage('Entertainment')">Entertainment</li>
+
+        </ul>
+      </div>
+      <div class="search-bar flex">
+        <input type="text" placeholder="e.g-technology" id="search-box">
+        <button id="search-btn">Search</button>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <main>
+    <div class="card-section container ">
+
+
+
+
+    </div>
+  </main>
+
+  <template id="template-area">
+    <div class="card">
+
+      <div class="card-header">
+        <img src="./1699861705549.png" alt="news-image" id="news-img">
+      </div>
+      <div class="card-content">
+        <h3 id="nws-title"></h3>
+        <h6 id="news-src"></h6>
+        <p id="news-desc"></p>
+      </div>
+
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
